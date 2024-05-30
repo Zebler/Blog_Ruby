@@ -1,1 +1,1 @@
-# Blog_Ruby
+# League Wiki
