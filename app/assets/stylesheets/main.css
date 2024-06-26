@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .logo{
+    float: left;
+    visibility: visible;
+    width: 200px;
+    height: 120px;
+    padding-right: 20px;
+ }
+ #main{
+   background-color: #defce6 ;
+   padding-bottom: 100%;
+   width: 100%;
+ }
+.name_title{
+  padding-top: 20px;
+}
+#header{
+  padding-left: 30px;
+}
+#content_wrapper{
+  height: 800px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+}
+#side_text{
+  width: auto;
+  height: 600px;
+  position: relative;
+  left: -150px;
+}
+.side_text_wrap{
+  display: block;
+  margin-top: auto;
+  padding: 15px;
+  width: 350px;
+  font-size: larger;
+}
+#content_grid{
+  display: block;
+  padding: 40px;
+  width: 80%;
+  height: 600px;
+  background-color: lightgreen;
+}
+#content_box{
+  width: fit-content;
+  height: fit-content;
+}
+
+.content_btn{
+  visibility: visible ;
+  width: 175px;
+  height: 125px;
+  display:block
+}
+.content_title{
+  text-align: center;
+  color: blue ;
+}
+#champion_grid{
+  display: block;
+  padding: 50px;
+  width: auto;
+  height: 800px;
+  background-color: lightgreen  ;
+}
+#champion_box{
+  width: fit-content;
+  height: fit-content;
+}
+.Champname_holder{
+  text-align: center;
+  color: blue;
+}

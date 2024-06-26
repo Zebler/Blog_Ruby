@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title League_Wiki
+    = stylesheet_link_tag "main", media: 'all'
+    
+  body
+  div id= "main"
+    #header
+      = image_tag 'league_logo.png', class:"logo"
+      h1 class="name_title" League Of Legends Wiki
+      h3 class="des" Learn the basics of the game and the concept of champions.
+    #content_wrapper
+      #side_text
+        b class="side_text_wrap"League of Legends is a multiplayer online battle arena (MOBA) game developed and published by Riot Games. In the game, players assume the role of a "summoner" who controls a "champion" with unique abilities. The objective is to work together with your team to destroy the enemy team's Nexus, a structure located in their base.
+        b class="side_text_wrap"Champions are the playable characters in League of Legends. Each champion has their own set of abilities and playstyle, allowing players to choose a champion that suits their preferred playstyle and strategy. Champions can be categorized into different roles such as tanks, mages, assassins, marksmen, and supports.
+        b class="side_text_wrap"Throughout this wiki, you will find detailed information about each champion, including their abilities, lore, and gameplay tips. Use this guide to enhance your knowledge of League of Legends champions and improve your gameplay.
+      #content_grid
+        #content_box
+          = image_submit_tag("Champion_icon .jpg", class: 'content_btn')
+          div class="content_title" Champions
+    #champion_grid
+      #champion_box
+        = image_submit_tag("Champion_icon .jpg", class: 'content_btn')
+        div class="Champname_holder" Name 

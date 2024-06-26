@@ -14,6 +14,19 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_04_041536) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "Champions", force: :cascade do |t|
+    t.string "Champ_title", null: false
+    t.string "Resource_type", null: false
+    t.integer "Price", null: false
+    t.integer "Champ_stat_id"
+    t.integer "Champ_ms", null: false
+    t.integer "Champ_attack_range", null: false
+    t.integer "Champ_AS_id"
+    t.integer "Champ_Ability_Kit_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "abilities", force: :cascade do |t|
     t.string "Ability_name", null: false
     t.integer "Resource_cost", null: false
@@ -34,19 +47,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_04_041536) do
     t.float "Attack_windup", null: false
     t.float "Attack_speed_ratio", null: false
     t.float "Bonus_attack_speed", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "champions", id: false, force: :cascade do |t|
-    t.integer "Champ_title", null: false
-    t.string "Resource_type", null: false
-    t.integer "Price", null: false
-    t.integer "Champ_stats_id"
-    t.integer "Champ_ms", null: false
-    t.integer "Champ_attack_range", null: false
-    t.integer "Champ_AS_id"
-    t.integer "Champ_Ability_Kit_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
