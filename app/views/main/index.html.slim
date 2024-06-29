@@ -17,9 +17,11 @@ html
         b class="side_text_wrap"Throughout this wiki, you will find detailed information about each champion, including their abilities, lore, and gameplay tips. Use this guide to enhance your knowledge of League of Legends champions and improve your gameplay.
       #content_grid
         #content_box
-          = image_submit_tag("Champion_icon .jpg", class: 'content_btn')
+          = image_submit_tag("Champion_icon.jpg", class: 'content_btn')
           div class="content_title" Champions
     #champion_grid
+      <% @champion.each do |c| %>
       #champion_box
-        = image_submit_tag("Champion_icon .jpg", class: 'content_btn')
-        div class="Champname_holder" Name 
+        = image_submit_tag("c.slash_arts", class: 'content_btn')
+
+        div class="Champname_holder" c.champ_name 

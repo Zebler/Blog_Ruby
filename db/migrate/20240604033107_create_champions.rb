@@ -1,6 +1,7 @@
 class CreateChampions < ActiveRecord::Migration[7.1]
   def change
     create_table :Champions do |t|
+      t.string :Champ_name, null: false
       t.string :Champ_title, null: false
       t.string :Resource_type, null: false
       t.integer :Price, null: false
